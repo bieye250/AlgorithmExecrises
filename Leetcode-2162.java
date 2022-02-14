@@ -8,40 +8,39 @@ class Test {
     }
 
     public int minCostSetTime(int startAt, int moveCost, int pushCost, int targetSeconds) {
-        if (targetSeconds <= 99) {
-            int a = targetSeconds / 10, b = targetSeconds % 10;
-            if (startAt == a || startAt == b)
-                return pushCost * 2 + moveCost;
-            else
-                return (pushCost + moveCost) << 1;
+        int ans = 0;
+        int minute = targetSeconds / 60;
+        int second = targetSeconds % 60;
+        if (minute == 100) {
+            minute = 99;
+            second += 60;
         }
-        var deque = new ArrayDeque<Integer>();
-        int a = targetSeconds / 60, b = targetSeconds % 60;
-        deque.offer(b % 10);
-        deque.offer(b / 10);
-        deque.offer(a % 10);
-        deque.offer(a / 10);
-        if (deque.peek() == 0)
-            deque.poll();
-        if (b > 39) {
-            if (deque.contains(startAt))
-                return pushCost * deque.size() + moveCost * (deque.size() - 1);
-            else
-                return (pushCost + moveCost) * deque.size();
+        ans = setTimeCost(minute, second, moveCost, pushCost, startAt);
+        if (minute > 0 && second < 40) {
+            ans = Math.min(ans, setTimeCost(minute - 1, second + 60, moveCost, pushCost, startAt));
         }
-        if(a > 10){
-            deque.offer(a%10-1);
-            deque.offer(b/10+6);
-            if(deque.contains(startAt))return pushCost*4+moveCost*3;
-            else return (pushCost+moveCost)<<2;
+        return ans;
+    }
+
+    public int setTimeCost(int minute, int second, int moveCost, int pushCost, int startAt) {
+        int ans = 0;
+        if (minute == 0) {
+            if (second < 10) {
+                ans = second == startAt ? pushCost : pushCost + moveCost;
+            } else {
+                ans = startAt == second / 10 ? pushCost : pushCost + moveCost;
+                ans += second / 10 == second % 10 ? pushCost : pushCost + moveCost;
+            }
+        } else {
+            if (minute < 10) {
+                ans = minute == startAt ? pushCost : pushCost + moveCost;
+            } else {
+                ans = minute / 10 == startAt ? pushCost : pushCost + moveCost;
+                ans += minute / 10 == minute % 10 ? pushCost : pushCost + moveCost;
+            }
+            ans += minute % 10 == second / 10 ? pushCost : pushCost + moveCost;
+            ans += second / 10 == second % 10 ? pushCost : pushCost + moveCost;
         }
-        if (a == 10) {
-            deque.poll();
-            deque.poll();
-            deque.offer(9);
-            deque.offer(b/10+6);
-        }
-        if (deque.contains(startAt)) return pushCost*3+moveCost*2;
-        else return (pushCost+moveCost)*3;
+        return ans;
     }
 }
