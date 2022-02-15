@@ -1,6 +1,6 @@
-public class Leetcode540 {
+class Leetcode {
     public static void main(String[] args) {
-        
+        System.out.println("hello");
     }
 
     public int singleNonDuplicate(int[] nums) {
