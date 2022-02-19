@@ -2,7 +2,7 @@ import java.util.*;
 
 import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
-class Test {
+public class Leetcode2162 {
     public static void main(String[] args) {
 
     }

@@ -32,5 +32,4 @@ public class Leetcode2165{
     }//0567
         }
     
-    }
 }

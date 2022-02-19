@@ -25,5 +25,6 @@ public class Codeforce1624B{
             }
             System.out.println("NO");
         }//a + (a+d) + (a+2d) = 3a+3d = 3(a+d)    
+        sc.close();
     }
 }
