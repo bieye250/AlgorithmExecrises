@@ -45,6 +45,7 @@ public class Leetcode838 {
                             a[t++] = 2;
                         }
                     }
+                    i--;  //右边界抵消"i++"影响
                 }
             }
         }
