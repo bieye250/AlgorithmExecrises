@@ -1,10 +1,5 @@
-import java.util.*;
+public class Leeetcode1020 {
 
-class test {
-    public static void main(String[] args) {
-        test t = new test();
-        t.numEnclaves(new int[][]{{0,1,1,0},{0,0,1,0},{0,0,1,0},{0,0,0,0}});
-    }
     int[][] b = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
     int row=0, col=0, t = 0; 
     boolean touch = false;
