@@ -6,6 +6,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Leetcode2187",
+            "request": "launch",
+            "mainClass": "Leetcode2187",
+            "projectName": "AlgorithmExecrises_ce9dea75"
+        },
+        {
             "name": "g++.exe - 生成和调试活动文件",
             "type": "cppdbg",
             "request": "launch",
