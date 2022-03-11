@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Leetcode2191",
+            "request": "launch",
+            "mainClass": "Leetcode2191",
+            "projectName": "AlgorithmExecrises_ce9dea75"
+        },
+        {
+            "type": "java",
             "name": "Launch Leetcode2055",
             "request": "launch",
             "mainClass": "Leetcode2055",

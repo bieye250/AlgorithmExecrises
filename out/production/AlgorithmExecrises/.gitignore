@@ -1,0 +1,8 @@
+*.iml
+.*exe
+*.class
+*.jar
+*.idea
+*.json
+*.vscode
+.vscode/launch.json
