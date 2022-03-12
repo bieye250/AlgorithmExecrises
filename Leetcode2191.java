@@ -15,7 +15,7 @@ public class Leetcode2191 {
             else {
                 var list = new ArrayList<Integer>();list.add(nums[i]);
                 map.put(num,list);
-            };
+            }
         }
         var ans = new int[nums.length];t=0;
         for(int i : map.keySet()){
