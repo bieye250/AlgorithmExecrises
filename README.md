@@ -7,7 +7,7 @@
 ### Export Environment in MSYS2 MinGW UCRT 64-bit
 ```shell
 nano .bashrc
-export PATH=$PATH:{Your VsCode Path}/M icrosoft\ VS\ Code/bin
+export PATH=$PATH:{Your VsCode Path}/Microsoft\ VS\ Code/bin
 CTRL+O CTRL+X
 source .bashrc
 ```

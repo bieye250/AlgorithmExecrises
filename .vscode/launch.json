@@ -1,31 +1,9 @@
 {
     // Use IntelliSense to learn about possible attributes.
-    //pacman -S --needed base-devel mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-gdb
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Launch Leetcode2191",
-            "request": "launch",
-            "mainClass": "Leetcode2191",
-            "projectName": "AlgorithmExecrises_ce9dea75"
-        },
-        {
-            "type": "java",
-            "name": "Launch Leetcode2055",
-            "request": "launch",
-            "mainClass": "Leetcode2055",
-            "projectName": "AlgorithmExecrises_ce9dea75"
-        },
-        {
-            "type": "java",
-            "name": "Launch Leetcode2187",
-            "request": "launch",
-            "mainClass": "Leetcode2187",
-            "projectName": "AlgorithmExecrises_ce9dea75"
-        },
         {
             "name": "g++.exe - 生成和调试活动文件",
             "type": "cppdbg",
