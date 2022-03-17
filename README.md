@@ -24,4 +24,4 @@ source .bashrc
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
 ```
-###Reference [vscode clang](https://solarianprogrammer.com/2021/06/11/install-clang-windows-msys2-mingw-w64/)
+### Reference [vscode clang](https://solarianprogrammer.com/2021/06/11/install-clang-windows-msys2-mingw-w64/)
