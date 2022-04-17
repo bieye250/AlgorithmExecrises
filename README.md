@@ -3,9 +3,11 @@
 ## Just for fun.
 ## Windows VSCode compile C++ with Clang
 ### Install msys2
-> pacman -S --needed base-devel mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-gdb
+> pacman -Syu //update 
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-gdb
 ### Export Environment in MSYS2 MinGW UCRT 64-bit
 ```shell
+clang --version #Windows PATH
 nano .bashrc
 export PATH=$PATH:{Your VsCode Path}/Microsoft\ VS\ Code/bin
 CTRL+O CTRL+X
