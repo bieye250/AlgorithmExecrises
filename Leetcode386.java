@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Leetcode386{
     public List<Integer> lexicalOrder(int n) {
         List<Integer> ret = new ArrayList<Integer>();

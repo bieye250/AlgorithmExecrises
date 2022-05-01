@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 public class Leetcode2244 {
     public int minimumRounds(int[] tasks) {
         Map<Integer,Integer> map = new HashMap();
