@@ -1,3 +1,4 @@
+package Leetcode202204;
 public class Leetcode6038{
     private int plusIdx;
     

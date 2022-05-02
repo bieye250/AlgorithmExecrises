@@ -1,3 +1,4 @@
+package Leetcode202204;
 import java.util.PriorityQueue;
 
 public class Leetcode2233 {
