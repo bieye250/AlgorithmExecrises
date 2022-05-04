@@ -22,6 +22,6 @@ public class Leetcode1823 {
             }
             cnt++;
         }
-        return start;
+        return start; 
     }
 }
