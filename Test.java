@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.TreeMap;
 
 /**
  * 以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。请你合并所有重叠的区间，并返回 一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间 。
@@ -49,5 +54,21 @@ public class Test {
         if(list.size()==0 || list.get(list.size()-1)[1] != end) list.add(new int[]{start,end});
         
         return list.toArray(new int[0][0]);
+    }
+    public long maximumImportance(int n, int[][] roads) {
+        var cnt = new int[n][2];
+        for(int i=0; i<n; i++) cnt[i][0]=i;
+        for(int[] i : roads){
+            // map.put(i[0],map.getOrDefault(i[0], 0)+1);
+            // map.put(i[1],map.getOrDefault(i[1], 0)+1);
+            cnt[i[0]][1]++;
+            cnt[i[1]][1]++;
+        }
+        Arrays.sort(cnt,(a,b)->b[1]-a[1]);
+        var ans = 0L;
+        for(int i=0; i<n; i++) {
+            ans += (long)(n-i)*cnt[i][1];    
+        }
+        return ans;
     }    
 }
