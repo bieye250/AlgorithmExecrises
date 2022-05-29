@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.TreeMap;
 
+import javax.swing.event.ListSelectionEvent;
+
 /**
  * 以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。请你合并所有重叠的区间，并返回 一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间 。
 
@@ -70,5 +72,34 @@ public class Test {
             ans += (long)(n-i)*cnt[i][1];    
         }
         return ans;
-    }    
+    }
+    public String discountPrices(String sentence, int discount) {
+        var sb = new StringBuffer();
+        int len = sentence.length(), start = 0, t = 0;
+        for(int i=0; i<len; i++){
+            if(sentence.charAt(i)!='$')  continue;
+            else {
+                long cnt = 0L;
+                t = i+1;
+                while(t<len&&sentence.charAt(t)>='0'&&sentence.charAt(t)<='9'){
+                    cnt = cnt*10 + sentence.charAt(t)-'0';
+                    t++;
+                }
+                if((t==len&&t>i+1)||(t<len && cnt>0 && sentence.charAt(t)==' ')){
+                    sb.append(sentence.substring(start, i+1));
+                    sb.append(String.format("%.2f", cnt*(1-discount*0.01)));
+                   // System.out.println(cnt);
+                    start = t;
+                }
+                else if(t<=len&&cnt>0){
+                    sb.append(sentence.substring(start, t));
+                    start = t;
+                }
+                i = t;
+            }
+        }
+        if(t <= len) sb.append(sentence.substring(start, sentence.length()));
+        //System.out.println("ka3caz4837h6ada4 r1 $547.82");
+        return sb.toString();
+    }
 }
