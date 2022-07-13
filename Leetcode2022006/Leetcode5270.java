@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode5270{
     public int minPathCost(int[][] grid, int[][] moveCost) {
         int row = grid.length, col = grid[0].length;

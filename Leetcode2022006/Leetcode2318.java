@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode2318 {
     static int mod = (int)1e9+7;
     static int[][][] f = new int[10001][7][7];

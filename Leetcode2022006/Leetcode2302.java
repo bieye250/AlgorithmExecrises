@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode2302 {
     public long countSubarrays(int[] nums, long k) {
         long ans = 0L, sum = 0L;

@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode6100{
     public int countHousePlacements(int n) {
         var mod = 1_000_000_007;

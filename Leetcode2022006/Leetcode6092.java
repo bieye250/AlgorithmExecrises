@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 import java.util.HashMap;
 
 public class Leetcode6092 {

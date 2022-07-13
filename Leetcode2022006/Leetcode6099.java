@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode6099 {
     public int longestSubsequence(String s, int k) {
         long cur = 0L;

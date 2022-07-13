@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode450{
     public TreeNode deleteNode(TreeNode root, int key) {
         if(root == null) return null;

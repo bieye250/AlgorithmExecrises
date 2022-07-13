@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode6106 {
     int[] f;
     int[] size;

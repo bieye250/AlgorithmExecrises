@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 import java.io.*;
 import java.util.*;
 import java.math.*;

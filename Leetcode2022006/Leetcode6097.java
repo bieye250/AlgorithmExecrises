@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 

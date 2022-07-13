@@ -1,3 +1,4 @@
+package Leetcode2022006;
 
 import java.io.BufferedReader;
 import java.io.IOException;

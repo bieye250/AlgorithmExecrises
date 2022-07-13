@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode029 {
     public Node insert(Node head, int insertVal) {
         // int cnt = 0;

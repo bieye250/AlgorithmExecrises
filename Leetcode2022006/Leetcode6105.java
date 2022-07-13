@@ -1,3 +1,5 @@
+package Leetcode2022006;
+
 public class Leetcode6105 {
     public int maximumXOR(int[] nums) {
         int ans = 0;
