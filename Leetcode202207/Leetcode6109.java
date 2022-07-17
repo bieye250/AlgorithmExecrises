@@ -1,3 +1,4 @@
+package Leetcode202207;
 public class Leetcode6109 {
     public int peopleAwareOfSecret(int n, int delay, int forget) {
         var mod = (int)1e9+7;
