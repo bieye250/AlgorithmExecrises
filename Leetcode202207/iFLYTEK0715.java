@@ -1,3 +1,4 @@
+package Leetcode202207;
 import java.util.Scanner;
 
 public class iFLYTEK0715 {

@@ -1,3 +1,4 @@
+package Leetcode202207;
 public class Leetcode648 {
     public String replaceWords(List<String> dictionary, String sentence) {
         Trie trie = new Trie();
