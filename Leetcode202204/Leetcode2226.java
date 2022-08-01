@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 public class Leetcode2226{
     public int maximumCandies(int[] candies, long k) {
         int min = 1<<30;

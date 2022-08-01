@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 import java.util.HashMap;
 import java.util.Map;
 public class Leetcode2244 {
