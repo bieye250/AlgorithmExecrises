@@ -1,4 +1,4 @@
-package Leetcode2022006;
+package Leetcode202206;
 
 public class Leetcode029 {
     public Node insert(Node head, int insertVal) {

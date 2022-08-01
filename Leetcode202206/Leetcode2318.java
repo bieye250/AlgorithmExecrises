@@ -1,4 +1,4 @@
-package Leetcode2022006;
+package Leetcode202206;
 
 public class Leetcode2318 {
     static int mod = (int)1e9+7;

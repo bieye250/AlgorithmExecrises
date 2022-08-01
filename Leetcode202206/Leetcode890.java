@@ -1,4 +1,4 @@
-package Leetcode2022006;
+package Leetcode202206;
 
 import java.util.ArrayList;
 import java.util.HashMap;

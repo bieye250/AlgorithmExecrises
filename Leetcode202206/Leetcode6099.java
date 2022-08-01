@@ -1,4 +1,4 @@
-package Leetcode2022006;
+package Leetcode202206;
 
 public class Leetcode6099 {
     public int longestSubsequence(String s, int k) {
