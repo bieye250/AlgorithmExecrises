@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 public class Leetcode6052 {
     public int minimumAverageDifference(int[] nums) {
         int len = nums.length, index = -1;

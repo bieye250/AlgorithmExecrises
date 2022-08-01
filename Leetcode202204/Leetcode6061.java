@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 public class Leetcode6061{
     public long waysToBuyPensPencils(int total, int cost1, int cost2) {
         long ans = 0L;

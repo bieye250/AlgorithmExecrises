@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 import java.util.*;
 public class Leetcode6035{
     public long numberOfWays(String s) {

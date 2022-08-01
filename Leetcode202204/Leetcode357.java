@@ -1,4 +1,4 @@
-package Leetcode202204.Leetcode202205;
+package Leetcode202204;
 public class Leetcode357 {
     public int countNumbersWithUniqueDigits(int n) {
         int[] a = {1,10,91};
