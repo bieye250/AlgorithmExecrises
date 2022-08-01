@@ -1,4 +1,4 @@
-package Leetcode2022006;
+package Leetcode202206;
 
 public class Leetcode5270{
     public int minPathCost(int[][] grid, int[][] moveCost) {
