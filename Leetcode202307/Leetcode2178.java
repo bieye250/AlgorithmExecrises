@@ -1,4 +1,4 @@
-package Leetcode2020307;
+package Leetcode202307;
 public class Leetcode2178 {
     public List<Long> maximumEvenSplit(long finalSum) {
         var ans = new ArrayList<Long>();

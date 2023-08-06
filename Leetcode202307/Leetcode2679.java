@@ -1,4 +1,4 @@
-package Leetcode2020307;
+package Leetcode202307;
 
 public class Leetcode2679 {
     public int matrixSum(int[][] nums) {

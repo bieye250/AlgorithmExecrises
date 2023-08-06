@@ -1,4 +1,4 @@
-package Leetcode2020307;
+package Leetcode202307;
 
 public class Leetcode931 {
     public int minFallingPathSum(int[][] matrix) {
